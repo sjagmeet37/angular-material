@@ -6,6 +6,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '../shared/material/material.module';
 import { ContactmanagerAppComponent } from './contactmanager-app/contactmanager-app.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 const routes : Routes = [
@@ -25,7 +26,8 @@ const routes : Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ]
 })
 export class ContactmanagerModule { }
