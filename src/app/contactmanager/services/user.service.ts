@@ -21,6 +21,9 @@ export class UserService {
     this._users = new BehaviorSubject<IUser[]>([]);
   }
 
+  public getUserById(id : number) : IUser | undefined {
+    return this.dataStore.users.find(x => x.id == id);
+  }
 
   public getUsers() : Observable<IUser[]> {
       return this._users.asObservable();
