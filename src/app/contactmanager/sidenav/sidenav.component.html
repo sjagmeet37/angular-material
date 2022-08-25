@@ -15,9 +15,6 @@
 
     <div class="app-sidenav-content">
         <app-toolbar (onMenuButtonClicked)="sidenav.toggle()"></app-toolbar>
-        <button type="button" mat-button (click)="sidenav.toggle()">
-            Open sidenav
-        </button>
         <div class="main-content-wrapper">
             <router-outlet></router-outlet>
         </div>
