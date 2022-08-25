@@ -25,7 +25,7 @@ export class UserService {
     return this.dataStore.users.find(x => x.id == id);
   }
 
-  public getUsers() : Observable<IUser[]> {
+  public get users() : Observable<IUser[]> {
       return this._users.asObservable();
   }
 
