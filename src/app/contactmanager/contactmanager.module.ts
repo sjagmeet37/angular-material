@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '../shared/material/material.module';
 import { ContactmanagerAppComponent } from './contactmanager-app/contactmanager-app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NotesComponent } from './components/notes/notes.component';
 
 
 const routes : Routes = [
@@ -22,7 +23,8 @@ const routes : Routes = [
     SidenavComponent,
     MainContentComponent,
     ToolbarComponent,
-    ContactmanagerAppComponent
+    ContactmanagerAppComponent,
+    NotesComponent
   ],
   imports: [
     CommonModule,
