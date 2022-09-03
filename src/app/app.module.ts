@@ -7,6 +7,7 @@ import { MaterialModule } from './shared/material/material.module';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 const routes : Routes =[
   {
@@ -33,7 +34,8 @@ const routes : Routes =[
     MaterialModule,
     RouterModule.forRoot(routes),
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

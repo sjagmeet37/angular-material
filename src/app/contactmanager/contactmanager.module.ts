@@ -8,6 +8,8 @@ import { MaterialModule } from '../shared/material/material.module';
 import { ContactmanagerAppComponent } from './contactmanager-app/contactmanager-app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NotesComponent } from './components/notes/notes.component';
+import { NewuserdialogComponent } from './newuserdialog/newuserdialog.component';
+import { FormsModule } from '@angular/forms';
 
 
 const routes : Routes = [
@@ -24,13 +26,15 @@ const routes : Routes = [
     MainContentComponent,
     ToolbarComponent,
     ContactmanagerAppComponent,
-    NotesComponent
+    NotesComponent,
+    NewuserdialogComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class ContactmanagerModule { }

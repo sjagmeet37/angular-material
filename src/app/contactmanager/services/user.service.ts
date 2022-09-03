@@ -41,4 +41,10 @@ export class UserService {
     );
   }
 
+  public saveUser(user : IUser) : number {
+    user.id = this.dataStore.users.length + 1;
+    this.dataStore.users.push(user);
+    return user.id;
+  }
+
 }
